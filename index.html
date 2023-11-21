@@ -1,0 +1,70 @@
+<!--HTML-->
+<!DOCTYPE html>
+<html lang="en">
+    <!--HEAD-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./src/style.css">
+        <title>Piedra/Papel/Tijera</title>
+    </head>
+
+    <!--BODY-->
+    <body>
+        <!--HEADER-->
+        <header class="header">
+            <nav class="navbar">
+                <img class="logo" src="./src/img/logo escuela de programaciòn (1)_Mesa de trabajo 1.png" alt="logo-casa-del-futuro">
+                <h1 class="title">Casa Del Futuro / Escuela de programacion</h1>
+                <img class="logo" src="./src/img/logo escuela de programaciòn (1)_Mesa de trabajo 1.png" alt="logo-casa-del-futuro">
+            </nav>
+        </header>
+
+        <!--MAIN-->
+        <main class="main">
+        <!--SELEC ATTACK-->
+            <div class="container">
+                <section id="selectAttack">
+                <h1 id="titulo">PIEDRA PAPEL O TIJERA</h1>
+                <h2 class="subtitulo">Selecciona el ataque:</h2>
+
+                <!--BUTTONS ATTAKS-->
+                <div class="btnataques">
+                    <button class="btnatq" id="btnSelectPiedra">🪨PIEDRA</button>
+                    <button class="btnatq" id="btnSelectPapel">📃PAPEL</button>
+                    <button class="btnatq" id="btnSelectTijera">✂️TIJERA</button>
+                </div>
+
+                <!--MESSAGE-->
+                <div class="mensajes">
+                    <p id="resultadodos"></p>
+                    <section id="mensajes"></section>
+                    
+                    <section class ='inactive' id="sectionReinicio">
+                        <button id="reinicio">Reiniciar</button>
+                    </section>
+                </div>
+
+                <!--ATTAKS-->
+                <div class="ataques">
+                    <div class="msjPlayer">
+                        <p>You: <span id="vidaPlayer">3</span></p>
+                        <div id="ataques-player"></div>
+                    </div>
+                <!--VS-->
+
+                    <div class="p_vs">
+                        <p id ="vs_icon">🆚️</p>
+                    </div>
+                <!--MESSAGE ENEMY-->
+                    <div class="msjEnemigo">
+                        <p>PC: <span id="vidaPC">3</span></p>    
+                        <div id="ataques-enemigo"></div>
+                    </div>
+                </div>
+            </div>
+            <!--LINK JAVA SCRIPT-->
+            <script src="./src/mian.js"></script>
+        </main>
+    </body>
+</html>
