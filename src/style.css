@@ -8,6 +8,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background: var(--background-main-color);
+    font-family: 'Poppins', sans-serif;
+}
+
 /*COLORS*/
 :root{
     --background-main-color: #00A3B2;
@@ -15,10 +20,7 @@
     --main-color: #72F3FF;
     --other-first-color: #FF974D;
     --other-second-color: #D9610C;
-}
-body{
-    background: var(--background-main-color);
-    font-family: 'Poppins', sans-serif;
+    --other-third-color: #0D0D0D;
 }
 
 /*HEADER*/
@@ -46,6 +48,7 @@ body{
     font-size: 2rem;
     color: var(--other-second-color);
 }
+
 /*MAIN*/
 .main{
     display: flex;
@@ -53,15 +56,27 @@ body{
     align-items: center;
     margin-top: 2rem;
 }
-#selectChamps{
+
+/*CONTAINER*/
+.container{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2rem 9%;
+    border: 2px solid var(--other-first-color);
+    border-radius: 25%;
+}
+
+/*SECTIONS*/
+#selectAttack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 #titulo {
-    font-size: 65px;
-    color: white;
+    font-size: 3.5rem;
+    color: var(--other-third-color);
     width: 100%;
     height: 70px;
     display: flex;
@@ -69,112 +84,72 @@ body{
     justify-content: center;
 }
 .subtitulo{
-    color: white;
-    font-size: 30px;
+    color: var(--other-second-color);
+    font-size: 2.5rem;
 }
-#tarjetas{
+
+/*BUTTONS ATTACK*/
+.btnataques{
     display: flex;
-    gap: 10px;
-}
-/* .tarjetamokepon{
-    width: 210px;
-    height: 236px;
-    background: #609EA2;
-    padding: 15px;
-    box-sizing: border-box;
-    color: #332C39;
-    border-radius: 20%;
-    margin: 25px;
-    border: 5px solid #332C39;
-    display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
+    padding: 1.1rem;
+    gap: 1.1rem;
 }
-
-.tarjetamokepon img{
-    width: 150px;
-} */
-
-/* input{
-    display: none;
-    transition: all 10000ms;
-}
-
-label:hover{
-    box-shadow: 10px 10px 0px 0px #332C3A, 20px 20px 0px 0px #C92C6D, 30px 30px 0px 0px #eb4d8fd2 ;
-    transform: translate(-5px,-5px);
-}
-
-input:checked + label{
-    background-color: #C92C6D;
-} */
-
-button{
-    font-family: 'Bruno Ace';
+.btnatq{
     width: 214px;
     height: 73px;
-    border: 2px solid #5C469C;
-    border-radius: 20px;
-    background: #1D267D;
-    font-size: 20px;
+    font-size: 1.2rem;
     margin-top: 10px;
-    color: white;
-    border: 2px solid #D4ADFC   
-}
-
-button:hover{
+    color: var(--other-third-color);
+    background: var(--other-first-color);
+    border: 2px solid var(--background-second-color);
+    border-radius: 2.5rem;
     cursor: pointer;
 }
 
-#selectAttack{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-#vs_icon {
-    padding-bottom: 20px;   
-}
-
+/*MESSAGE*/
 .mensajes{
-    width: 600px;
+    font-size: 2rem;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 20px;
-    padding: 10px;
-    border: 2px solid #D4ADFC;
+    margin: 2.5rem;
+    padding: 2rem;
+    border: 2px solid var(--other-second-color);
     border-radius: 20px;
-    background: #1D267D;
+    background: var(--other-first-color);
 }
-
-#reinicio{
-    width: 100px;
-    height: 50px;
-    font-size: 15px;
+.inactive .reinicio{
+    font-size: 1.2rem;
+    width:  7rem;
+    height: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #5C469C;
-    color: white;
+    background: var(--main-color);
+    color: var(--other-third-color);
+    border-radius: 10%;
+    cursor: pointer;
 }
 
+/*ATTACKS*/
 .ataques{
     display: grid;
     grid-template-columns: 200px 0.3fr 200px;
 }
-
 .msjPlayer , .msjEnemigo{
+    font-size: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 2px solid #D4ADFC;
-    border-radius: 20px;
-    background: #1D267D;
-    color: white;
+    border: 2px solid var(--background-second-color);
+    border-radius: 10%;
+    background: var(--other-first-color);
+    color: var(--other-third-color);
 }
 .msjPlayer{
     margin-left: -110px;
@@ -183,4 +158,8 @@ button:hover{
 .msjEnemigo{
     margin-left: 20px;
     width: 280px;
+}
+#vs_icon {
+    padding-bottom: 0.5rem;
+    font-size: 1.1rem;   
 }

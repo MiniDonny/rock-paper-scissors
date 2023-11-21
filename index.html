@@ -3,9 +3,12 @@
 <html lang="en">
     <!--HEAD-->
     <head>
+        <!--META-->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--LINK CSS-->
         <link rel="stylesheet" href="./src/style.css">
+        <!--TITLE-->
         <title>Piedra/Papel/Tijera</title>
     </head>
 
@@ -25,44 +28,46 @@
         <!--SELEC ATTACK-->
             <div class="container">
                 <section id="selectAttack">
-                <h1 id="titulo">PIEDRA PAPEL O TIJERA</h1>
-                <h2 class="subtitulo">Selecciona el ataque:</h2>
+                    <h1 id="titulo">PIEDRA PAPEL TIJERA</h1>
+                    <h2 class="subtitulo">Selecciona el ataque:</h2>
 
-                <!--BUTTONS ATTAKS-->
-                <div class="btnataques">
-                    <button class="btnatq" id="btnSelectPiedra">🪨PIEDRA</button>
-                    <button class="btnatq" id="btnSelectPapel">📃PAPEL</button>
-                    <button class="btnatq" id="btnSelectTijera">✂️TIJERA</button>
-                </div>
-
-                <!--MESSAGE-->
-                <div class="mensajes">
-                    <p id="resultadodos"></p>
-                    <section id="mensajes"></section>
-                    
-                    <section class ='inactive' id="sectionReinicio">
-                        <button id="reinicio">Reiniciar</button>
-                    </section>
-                </div>
-
-                <!--ATTAKS-->
-                <div class="ataques">
-                    <div class="msjPlayer">
-                        <p>You: <span id="vidaPlayer">3</span></p>
-                        <div id="ataques-player"></div>
+                    <!--BUTTONS ATTACKS-->
+                    <div class="btnataques">
+                        <button class="btnatq" id="btnSelectPiedra">🪨PIEDRA</button>
+                        <button class="btnatq" id="btnSelectPapel">📃PAPEL</button>
+                        <button class="btnatq" id="btnSelectTijera">✂️TIJERA</button>
                     </div>
-                <!--VS-->
 
-                    <div class="p_vs">
-                        <p id ="vs_icon">🆚️</p>
+                    <!--ATTACKS-->
+                    <div class="ataques">
+                        <div class="msjPlayer">
+                            <p>Vos: <span id="vidaPlayer">3</span></p>
+                            <div id="ataques-player"></div>
+                        </div>
+
+                        <!--VS-->
+                        <div class="p_vs">
+                            <p id ="vs_icon">🆚️</p>
+                        </div>
+
+                        <!--MESSAGE ENEMY-->
+                        <div class="msjEnemigo">
+                            <p>PC: <span id="vidaPC">3</span></p>    
+                            <div id="ataques-enemigo"></div>
+                        </div>
                     </div>
-                <!--MESSAGE ENEMY-->
-                    <div class="msjEnemigo">
-                        <p>PC: <span id="vidaPC">3</span></p>    
-                        <div id="ataques-enemigo"></div>
+
+                    <!--MESSAGE-->
+                    <div class="mensajes">
+                        <p id="resultadodos"></p>
+                        <section id="mensajes"></section>
+                        
+                        <section class ='inactive' id="sectionReinicio">
+                            <button class="reinicio" id="reinicio">Reiniciar</button>
                     </div>
-                </div>
+                </section>
             </div>
+
             <!--LINK JAVA SCRIPT-->
             <script src="./src/mian.js"></script>
         </main>
